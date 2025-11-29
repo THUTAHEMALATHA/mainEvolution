@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
+    <title>mini fleet app-admin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Admin dashboard Page</h1>
-    <script src="./admin.js"></script>
+     <header class="navbar">
+        <h1>Fleet Management Dashboard</h1>
+        <div class="filters">
+            <label >
+                category:<select id="filter-category">
+                    <option value="">All</option>
+                    <option value="">Mini Bus</option>
+                    <option value="">Truck</option> 
+                </select></label>
+            <label >
+                Availibility:<select id="filter-availibility">
+                    <option value="">All</option>
+                    <option value="Available">Available</option>
+                    <option value="UnAvailable">UnAvailable</option>
+                </select>
+            </label>
+
+            <button id="clear-filters">clear-filters</button>
+        </div>
+     </header>
 </body>
 </html>

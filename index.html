@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My app login</title>
+    <title>mini fleet app</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome Back</h1>
-    <form >
-        <label >Email<input type="email" id="login-email" required></label>
-         <label >Password<input type="Password" id="login-pass" required></label>
-         <button type="password">Sign In</button>
-         <p ></p>
-    </form>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form id="login-form">
+            <label >EMail <input type="email" id="email" placeholder="Enter email" required></label>
+             <label >Password <input type="password" id="password" placeholder="Enter password" required></label>
+             <button type="submit">Login</button>
+             <p id="login-msg"></p>
+            </form>
+    </div>
+   
     <script src="./index.js"></script>
 </body>
 </html>
