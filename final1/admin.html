@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini fleet app-admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="navbar">
+        <h1>Fleet Management Dashboard</h1>
+        <div class="filters">
+            <label >
+                category:<select id="filter-category">
+                    <option value="">All</option>
+                    <option value="">Mini Bus</option>
+                    <option value="">Truck</option> 
+                </select></label>
+            <label >
+                Availibility:<select id="filter-availibility">
+                    <option value="">All</option>
+                    <option value="Available">Available</option>
+                    <option value="UnAvailable">UnAvailable</option>
+                </select>
+            </label>
+
+            <button id="clear-filters">clear-filters</button>
+        </div>
+     </header>
+     <!-- main -->
+      <div class="layout">
+        <aside class="sidebar">
+            <h2>Add Fleet</h2>
+            <form id="fleet-form">
+                <label >Reg No. of vehicle</label>
+                <input type="text" id="regNo" required>
+                <label >Category</label>
+                <select  id="category">
+                    <option value="Mini Bus">Mini Bus</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Truck">Truck</option>
+                </select>
+                <label >Driver Name</label>
+                <input type="text" id="driverName" required>
+                <label >Availibility</label>
+                <select  id="availibility">
+                    <option value="Available">Available</option>
+                    <option value="UnAvailable">unavailable</option>
+                </select>
+              <button type="submit">Add Fleet</button>
+            </form>
+        </aside>
+        <!-- card container -->
+         <main class="cards-container" id="cards-container"></main>
+      </div>
+</body>
+</html>
