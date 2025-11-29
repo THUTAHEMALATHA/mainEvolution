@@ -27,5 +27,31 @@
             <button id="clear-filters">clear-filters</button>
         </div>
      </header>
+     <!-- main -->
+      <div class="layout">
+        <aside class="sidebar">
+            <h2>Add Fleet</h2>
+            <form id="fleet-form">
+                <label >Reg No. of vehicle</label>
+                <input type="text" id="regNo" required>
+                <label >Category</label>
+                <select  id="category">
+                    <option value="Mini Bus">Mini Bus</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Truck">Truck</option>
+                </select>
+                <label >Driver Name</label>
+                <input type="text" id="driverName" required>
+                <label >Availibility</label>
+                <select  id="availibility">
+                    <option value="Available">Available</option>
+                    <option value="UnAvailable">unavailable</option>
+                </select>
+              <button type="submit">Add Fleet</button>
+            </form>
+        </aside>
+        <!-- card container -->
+         <main class="cards-container" id="cards-container"></main>
+      </div>
 </body>
 </html>
